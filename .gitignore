@@ -1,4 +1,5 @@
-# Created by https://www.gitignore.io/api/node,grunt
+
+# Created by https://www.gitignore.io/api/node,grunt,sass
 
 ### grunt ###
 # Grunt usually compiles files inside this directory
@@ -82,5 +83,11 @@ typings/
 # Serverless directories
 .serverless
 
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
 
-# End of https://www.gitignore.io/api/node,grunt
+
+# End of https://www.gitignore.io/api/node,grunt,sass
