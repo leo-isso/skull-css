@@ -1,5 +1,54 @@
-=test($var)
-  font-size: $var
+$gutter: 20%
 
-.teste
-  +test(1px)
+=columns($ac, $tc: 12, $gp: $gutter)
+  // * $cw - column width
+  // * $tc - total columns
+  // * $ac - actual column (how many columns)
+  // * $oc - one column (width)
+  // * $tw - total width
+
+  $tw: 100%
+  $oc: $tw / $tc
+  $cw: $oc * $ac
+
+  // * $gp - gutter percentual (relative to 1 column width)
+  // * $gt - gutter total
+
+  $gt: $oc * $gp / $tw
+
+  // * $fc - final column (width)
+
+  $fc: $cw - $gt
+
+  // * $gd - gutter distributtion
+
+  $gd: $gt / $tc * $ac
+
+  // * $rc - redistributted collumn
+
+  $rc: $fc + $gd
+
+  width: $rc
+
+  &.left-offset
+    margin-left: $gt
+
+  &.right-offset
+    margin-right: $gt
+
+  &:first-child
+    margin-left: 0
+
+    &:last-child
+      width: $cw
+
+.one.column
+  +columns(1)
+.six.column
+  +columns(5)
+.nine.column
+  +columns(9)
+
+h1
+
+  color: red
