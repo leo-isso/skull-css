@@ -40,9 +40,9 @@ module.exports = function(grunt) {
       target: {
         files: [{
           expand: true,
-          cwd: 'dist/css/',
+          cwd: 'src/css/',
           src: ['skull.css'],
-          dest: 'dist/css/',
+          dest: 'src/css/',
           ext: '.min.css'
         }]
       }
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
     watch: {
       compass: {
         files: ['src/**/*.{scss,sass}'],
-        tasks: ['compass']
+        tasks: ['compass', 'cssmin']
       },
     }
   });
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['clean', 'compass', 'copy', 'cssmin']);
+  grunt.registerTask('build', ['clean', 'compass', 'cssmin', 'copy']);
   grunt.registerTask('watchfiles', ['watch']);
 
 };
