@@ -1,0 +1,18 @@
+{
+  "name": "skull-css",
+  "version": "1.0.0",
+  "description": "SkullCSS Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "skeletoncss",
+    "skullcss",
+    "sass"
+  ],
+  "author": "Leonardo Isso",
+  "license": "Beerware"
+}
