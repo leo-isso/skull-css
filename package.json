@@ -14,5 +14,9 @@
     "sass"
   ],
   "author": "Leonardo Isso",
-  "license": "Beerware"
+  "license": "Beerware",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-copy": "^1.0.0"
+  }
 }
