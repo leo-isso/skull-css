@@ -14,17 +14,9 @@ module.exports = function(grunt) {
         dest: 'dist/',
       },
     },
-    jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
-      options: {
-        globals: {
-          jQuery: true
-        }
-      }
-    },
     watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint']
+      files: ['<%= copy.main.cwd %>'],
+      tasks: ['']
     }
   });
 
