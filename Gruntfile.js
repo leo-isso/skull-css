@@ -14,6 +14,14 @@ module.exports = function(grunt) {
         dest: 'dist/',
       },
     },
+    compass: {
+      dist: {
+        options: {
+          config: 'config.rb',
+          force: true
+        }
+      }
+    },
     sass: {                              
       dist: {                            
         options: {
@@ -32,25 +40,29 @@ module.exports = function(grunt) {
       target: {
         files: [{
           expand: true,
-          cwd: 'src/css/',
+          cwd: 'dist/css/',
           src: ['skull.css'],
-          dest: 'src/css/',
+          dest: 'dist/css/',
           ext: '.min.css'
         }]
       }
     },
     watch: {
-      files: ['<%= copy.main.cwd %>'],
-      tasks: ['sass']
+      compass: {
+        files: ['src/**/*.{scss,sass}'],
+        tasks: ['compass']
+      },
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['clean', 'sass', 'cssmin', 'copy']);
+  grunt.registerTask('build', ['clean', 'compass', 'copy', 'cssmin']);
+  grunt.registerTask('watchfiles', ['watch']);
 
 };
