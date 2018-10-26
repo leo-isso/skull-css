@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "SkullCSS Framework",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
+  "scripts": {},
   "keywords": [
     "css",
     "framework",
