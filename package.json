@@ -17,6 +17,9 @@
   "license": "Beerware",
   "devDependencies": {
     "grunt": "^1.0.3",
-    "grunt-contrib-copy": "^1.0.0"
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0"
   }
 }
