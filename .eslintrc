@@ -4,6 +4,7 @@
       "sourceType": "module"
   },
   "rules": {
-    "semi": ["warn", "always"]
+    "semi": ["warn", "always"],
+    "indent": ["error", 4]
   }
 }
