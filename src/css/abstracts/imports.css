@@ -57,26 +57,46 @@ body {
 }
 
 /* line 16, ../../sass/abstracts/_utils.sass */
+.bg-grey {
+  background-color: #474747 !important;
+}
+
+/* line 19, ../../sass/abstracts/_utils.sass */
+.bg-lgrey {
+  background-color: #c1c1c1 !important;
+}
+
+/* line 22, ../../sass/abstracts/_utils.sass */
 .text-primary {
   color: #34bfe2 !important;
 }
 
-/* line 19, ../../sass/abstracts/_utils.sass */
+/* line 25, ../../sass/abstracts/_utils.sass */
 .text-red {
   color: #e23f34 !important;
 }
 
-/* line 22, ../../sass/abstracts/_utils.sass */
+/* line 28, ../../sass/abstracts/_utils.sass */
 .text-green {
   color: #34e239 !important;
 }
 
-/* line 25, ../../sass/abstracts/_utils.sass */
+/* line 31, ../../sass/abstracts/_utils.sass */
 .text-white {
   color: #ffffff !important;
 }
 
-/* line 28, ../../sass/abstracts/_utils.sass */
+/* line 34, ../../sass/abstracts/_utils.sass */
 .text-black {
   color: #211e1d !important;
+}
+
+/* line 37, ../../sass/abstracts/_utils.sass */
+.text-grey {
+  color: #474747 !important;
+}
+
+/* line 40, ../../sass/abstracts/_utils.sass */
+.text-lgrey {
+  color: #c1c1c1 !important;
 }
