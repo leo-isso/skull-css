@@ -1,0 +1,54 @@
+/* Variables
+ * Functions
+ * Mixins */
+/* Grid Vars */
+/* Colors */
+/* line 1, ../../sass/abstracts/_utils.sass */
+.bg-primary {
+  background-color: #34bfe2 !important;
+}
+
+/* line 4, ../../sass/abstracts/_utils.sass */
+.bg-red {
+  background-color: #e23f34 !important;
+}
+
+/* line 7, ../../sass/abstracts/_utils.sass */
+.bg-green {
+  background-color: #34e239 !important;
+}
+
+/* line 10, ../../sass/abstracts/_utils.sass */
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+/* line 13, ../../sass/abstracts/_utils.sass */
+.bg-black {
+  background-color: #211e1d !important;
+}
+
+/* line 16, ../../sass/abstracts/_utils.sass */
+.text-primary {
+  color: #34bfe2 !important;
+}
+
+/* line 19, ../../sass/abstracts/_utils.sass */
+.text-red {
+  color: #e23f34 !important;
+}
+
+/* line 22, ../../sass/abstracts/_utils.sass */
+.text-green {
+  color: #34e239 !important;
+}
+
+/* line 25, ../../sass/abstracts/_utils.sass */
+.text-white {
+  color: #ffffff !important;
+}
+
+/* line 28, ../../sass/abstracts/_utils.sass */
+.text-black {
+  color: #211e1d !important;
+}
