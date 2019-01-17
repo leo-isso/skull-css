@@ -3,6 +3,34 @@
  * Mixins */
 /* Grid Vars */
 /* Colors */
+@import url("https://fonts.googleapis.com/css?family=Aleo:400,400i,700|Roboto:400,400i,700,900");
+/* line 3, ../sass/abstracts/_fonts.sass */
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+/* line 7, ../sass/abstracts/_fonts.sass */
+.title {
+  font-family: Aleo, Courier New, Courier, monospace;
+  font-weight: 700;
+  color: #211e1d;
+}
+
+/* line 12, ../sass/abstracts/_fonts.sass */
+.subtitle {
+  font-family: Aleo, Courier New, Courier, monospace;
+  font-weight: 700;
+  color: #474747;
+}
+
+/* line 17, ../sass/abstracts/_fonts.sass */
+.paragraph {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #211e1d;
+}
+
 /* line 1, ../sass/abstracts/_utils.sass */
 .bg-primary {
   background-color: #34bfe2 !important;
