@@ -1,7 +1,8 @@
 /* Dynamic flex-grid by leo-isso
   You can find it at:
   https://gist.github.com/leo-isso/fa32b86b9b49e6ac81d7cae85f56cf11
-  
+
+/* Columns mixins
 =columns($ac, $tc: 12, $gp: $gutter)
   // * $cw - column width
   // * $tc - total columns
@@ -44,6 +45,7 @@
     &:last-child
       width: $cw
 
+/* Viewport mixins
 =desktop-media-hd
   @media screen and (min-width: $view-desktop-hd)
     @content
