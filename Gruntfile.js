@@ -1,6 +1,13 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    autoprefixer: {
+      dist: {
+        files:{
+          'src/css/skull.css': 'src/css/skull.css' 
+        }
+      }
+    },
     clean: {
       build: {
         src: ['dist']
@@ -55,6 +62,7 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -62,7 +70,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['clean', 'compass', 'cssmin', 'copy']);
+  grunt.registerTask('build', ['clean', 'compass', 'autoprefixer', 'cssmin', 'copy']);
   grunt.registerTask('watchfiles', ['watch']);
 
 };
