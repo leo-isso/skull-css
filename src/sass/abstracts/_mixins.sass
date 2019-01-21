@@ -43,3 +43,15 @@
 
     &:last-child
       width: $cw
+
+=desktop-media-hd
+  @media screen and (min-width: $view-desktop-hd)
+    @content
+
+=desktop-media
+  @media screen and (min-width: $view-desktop)
+    @content
+
+=tablet-media
+  @media screen and (min-width: $view-tablet)
+    @content
