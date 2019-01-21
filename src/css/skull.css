@@ -3,6 +3,7 @@
  * Mixins */
 /* Grid Vars */
 /* Colors */
+/* Viewports (higher than...) */
 @import url("https://fonts.googleapis.com/css?family=Aleo:400,400i,700|Roboto:400,400i,700,900");
 /* line 3, ../sass/abstracts/_fonts.sass */
 body {
@@ -123,6 +124,9 @@ body {
   text-align: justify !important;
 }
 
+/* Dynamic flex-grid by leo-isso
+ * You can find it at:
+ * https://gist.github.com/leo-isso/fa32b86b9b49e6ac81d7cae85f56cf11 */
 /* Reset / Normalizer
  * Typography  */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -509,6 +513,17 @@ body {
 }
 
 /* Buttons, Dropdowns, Heros, Inputs */
+/* line 1, ../sass/components/_native.sass */
+.input, .textarea {
+  border: 0.1rem solid #c1c1c1;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+/* line 6, ../sass/components/_native.sass */
+.input:focus, .textarea:focus {
+  outline: #34bfe2 auto 0.5rem;
+}
+
 /* Grid
  * Row
  * Containers */
