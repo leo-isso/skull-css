@@ -1,0 +1,6 @@
+$column-start: 1
+$column-end: 12
+
+@for $i from $column-start through $column-end
+  .columns-#{$i}
+    +columns($i) 
