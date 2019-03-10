@@ -64,3 +64,27 @@
   &-spacing
     @extend #{$classname}
     margin-bottom: 1.5rem
+
+=generate-buttons($color-list)
+  .button
+    background-color: $color-primary
+    border: 0
+    border-radius: $soft-corner
+    color: $color-white
+    cursor: pointer
+    padding: 1rem 2.5rem
+
+    &:focus
+      outline: none
+
+    &:hover
+      background-color: darken($color-primary, 10%)
+
+  @each $title, $color in $color-list
+    .button-#{$title}
+      @extend .button
+      background-color: $color
+
+      &:hover
+        background-color: darken($color, 10%)
+
