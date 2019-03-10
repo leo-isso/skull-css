@@ -57,3 +57,10 @@
 =tablet-media
   @media screen and (min-width: $view-tablet)
     @content
+
+/* Font mixins
+
+=add-spacing($classname)
+  &-spacing
+    @extend #{$classname}
+    margin-bottom: 1.5rem
