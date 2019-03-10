@@ -549,7 +549,7 @@ body {
 }
 
 /* line 69, ../sass/abstracts/_mixins.sass */
-.button, .button-primary, .button-green, .button-lgrey, .button-red, .button-yellow {
+.button, .button-reverse, .button-reverse-primary, .button-reverse-green, .button-reverse-lgrey, .button-reverse-red, .button-reverse-yellow, .button-primary, .button-green, .button-lgrey, .button-red, .button-yellow {
   background-color: #34bfe2;
   border: 0;
   border-radius: 0.5rem;
@@ -558,57 +558,124 @@ body {
   padding: 1rem 2.5rem;
 }
 /* line 77, ../sass/abstracts/_mixins.sass */
-.button:focus, .button-primary:focus, .button-green:focus, .button-lgrey:focus, .button-red:focus, .button-yellow:focus {
+.button:focus, .button-reverse:focus, .button-reverse-primary:focus, .button-reverse-green:focus, .button-reverse-lgrey:focus, .button-reverse-red:focus, .button-reverse-yellow:focus, .button-primary:focus, .button-green:focus, .button-lgrey:focus, .button-red:focus, .button-yellow:focus {
   outline: none;
 }
 /* line 80, ../sass/abstracts/_mixins.sass */
-.button:hover, .button-primary:hover, .button-green:hover, .button-lgrey:hover, .button-red:hover, .button-yellow:hover {
+.button:hover, .button-reverse:hover, .button-reverse-primary:hover, .button-reverse-green:hover, .button-reverse-lgrey:hover, .button-reverse-red:hover, .button-reverse-yellow:hover, .button-primary:hover, .button-green:hover, .button-lgrey:hover, .button-red:hover, .button-yellow:hover {
   background-color: #1ca4c7;
 }
+/* line 83, ../sass/abstracts/_mixins.sass */
+.button-reverse, .button-reverse-primary, .button-reverse-green, .button-reverse-lgrey, .button-reverse-red, .button-reverse-yellow {
+  background-color: #ffffff;
+  border: 1px solid #34bfe2;
+  color: #34bfe2;
+  padding: calc(1rem -0.1rem) 2.5rem -0.1rem;
+}
 
-/* line 84, ../sass/abstracts/_mixins.sass */
+/* line 92, ../sass/abstracts/_mixins.sass */
 .button-primary {
   background-color: #34bfe2;
 }
-/* line 88, ../sass/abstracts/_mixins.sass */
+/* line 96, ../sass/abstracts/_mixins.sass */
 .button-primary:hover {
   background-color: #1ca4c7;
 }
 
-/* line 84, ../sass/abstracts/_mixins.sass */
+/* line 99, ../sass/abstracts/_mixins.sass */
+.button-reverse-primary {
+  border: 1px solid #34bfe2;
+  color: #34bfe2;
+}
+/* line 104, ../sass/abstracts/_mixins.sass */
+.button-reverse-primary:hover {
+  background-color: #ffffff;
+  border-color: #167f9a;
+  color: #167f9a;
+}
+
+/* line 92, ../sass/abstracts/_mixins.sass */
 .button-green {
   background-color: #34e239;
 }
-/* line 88, ../sass/abstracts/_mixins.sass */
+/* line 96, ../sass/abstracts/_mixins.sass */
 .button-green:hover {
   background-color: #1cc721;
 }
 
-/* line 84, ../sass/abstracts/_mixins.sass */
+/* line 99, ../sass/abstracts/_mixins.sass */
+.button-reverse-green {
+  border: 1px solid #34e239;
+  color: #34e239;
+}
+/* line 104, ../sass/abstracts/_mixins.sass */
+.button-reverse-green:hover {
+  background-color: #ffffff;
+  border-color: #169a1a;
+  color: #169a1a;
+}
+
+/* line 92, ../sass/abstracts/_mixins.sass */
 .button-lgrey {
   background-color: #c1c1c1;
 }
-/* line 88, ../sass/abstracts/_mixins.sass */
+/* line 96, ../sass/abstracts/_mixins.sass */
 .button-lgrey:hover {
   background-color: #a8a8a8;
 }
 
-/* line 84, ../sass/abstracts/_mixins.sass */
+/* line 99, ../sass/abstracts/_mixins.sass */
+.button-reverse-lgrey {
+  border: 1px solid #c1c1c1;
+  color: #c1c1c1;
+}
+/* line 104, ../sass/abstracts/_mixins.sass */
+.button-reverse-lgrey:hover {
+  background-color: #ffffff;
+  border-color: #8e8e8e;
+  color: #8e8e8e;
+}
+
+/* line 92, ../sass/abstracts/_mixins.sass */
 .button-red {
   background-color: #e23f34;
 }
-/* line 88, ../sass/abstracts/_mixins.sass */
+/* line 96, ../sass/abstracts/_mixins.sass */
 .button-red:hover {
   background-color: #c7271c;
 }
 
-/* line 84, ../sass/abstracts/_mixins.sass */
+/* line 99, ../sass/abstracts/_mixins.sass */
+.button-reverse-red {
+  border: 1px solid #e23f34;
+  color: #e23f34;
+}
+/* line 104, ../sass/abstracts/_mixins.sass */
+.button-reverse-red:hover {
+  background-color: #ffffff;
+  border-color: #9a1e16;
+  color: #9a1e16;
+}
+
+/* line 92, ../sass/abstracts/_mixins.sass */
 .button-yellow {
   background-color: #f2bd0e;
 }
-/* line 88, ../sass/abstracts/_mixins.sass */
+/* line 96, ../sass/abstracts/_mixins.sass */
 .button-yellow:hover {
   background-color: #c3980a;
+}
+
+/* line 99, ../sass/abstracts/_mixins.sass */
+.button-reverse-yellow {
+  border: 1px solid #f2bd0e;
+  color: #f2bd0e;
+}
+/* line 104, ../sass/abstracts/_mixins.sass */
+.button-reverse-yellow:hover {
+  background-color: #ffffff;
+  border-color: #927208;
+  color: #927208;
 }
 
 /* Grid
