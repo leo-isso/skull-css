@@ -4,32 +4,58 @@
 /* Grid Vars */
 /* Colors */
 /* Viewports (higher than...) */
-@import url("https://fonts.googleapis.com/css?family=Aleo:400,400i,700|Roboto:400,400i,700,900");
+/* Dynamic flex-grid by leo-isso
+ * You can find it at:
+ * https://gist.github.com/leo-isso/fa32b86b9b49e6ac81d7cae85f56cf11 */
+/* Columns mixins */
+/* Viewport mixins */
+/* Font mixins */
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,600,600i,700,700i");
 /* line 3, ../sass/abstracts/_fonts.sass */
 body {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: normal;
 }
 
 /* line 7, ../sass/abstracts/_fonts.sass */
-.title {
-  font-family: Aleo, Courier New, Courier, monospace;
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* line 10, ../sass/abstracts/_fonts.sass */
+.title, .title-spacing {
+  margin: 0;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: #211e1d;
 }
-
-/* line 12, ../sass/abstracts/_fonts.sass */
-.subtitle {
-  font-family: Aleo, Courier New, Courier, monospace;
-  font-weight: 700;
-  color: #474747;
+/* line 64, ../sass/abstracts/_mixins.sass */
+.title-spacing {
+  margin-bottom: 1.5rem;
 }
 
 /* line 17, ../sass/abstracts/_fonts.sass */
-.paragraph {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+.subtitle, .subtitle-spacing {
+  margin: 0;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #474747;
+}
+/* line 64, ../sass/abstracts/_mixins.sass */
+.subtitle-spacing {
+  margin-bottom: 1.5rem;
+}
+
+/* line 24, ../sass/abstracts/_fonts.sass */
+.paragraph, .paragraph-spacing {
+  margin: 0;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: normal;
   color: #211e1d;
+}
+/* line 64, ../sass/abstracts/_mixins.sass */
+.paragraph-spacing {
+  margin-bottom: 1.5rem;
 }
 
 /* Background utils */
@@ -124,11 +150,6 @@ body {
   text-align: justify !important;
 }
 
-/* Dynamic flex-grid by leo-isso
- * You can find it at:
- * https://gist.github.com/leo-isso/fa32b86b9b49e6ac81d7cae85f56cf11 */
-/* Columns mixins */
-/* Viewport mixins */
 /* Reset / Normalizer
  * Typography  */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
