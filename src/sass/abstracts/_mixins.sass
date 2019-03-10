@@ -80,6 +80,14 @@
     &:hover
       background-color: darken($color-primary, 10%)
 
+    &-reverse
+      @extend .button
+      background-color: $color-white
+      border: 1px solid $color-primary
+      color: $color-primary
+      padding: calc(1rem -0.1rem) (2.5rem -0.1rem)
+
+
   @each $title, $color in $color-list
     .button-#{$title}
       @extend .button
@@ -87,4 +95,15 @@
 
       &:hover
         background-color: darken($color, 10%)
+
+    .button-reverse-#{$title}
+      @extend .button-reverse
+      border: 1px solid $color
+      color: $color
+
+      &:hover
+        background-color: $color-white
+        border-color: darken($color, 20%)
+        color: darken($color, 20%)
+        
 
